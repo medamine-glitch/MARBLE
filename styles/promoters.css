@@ -1,0 +1,233 @@
+/* Partnership Content */
+.partnership-content {
+  padding: 4rem 0;
+}
+
+.partnership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.partnership-text {
+  padding: 1rem;
+}
+
+.partnership-text h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.partnership-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.partnership-benefits {
+  margin-bottom: 3rem;
+}
+
+.partnership-benefits h3 {
+  color: #d4af37;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.partnership-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.partnership-benefits li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  line-height: 1.6;
+}
+
+.partnership-benefits li:last-child {
+  border-bottom: none;
+}
+
+.partnership-benefits strong {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.partnership-services h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.services-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.service-item {
+  background: #f8f6f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #d4af37;
+}
+
+.service-item h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.service-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.partnership-visual {
+  position: relative;
+}
+
+.partnership-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.stats-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d4af37;
+  font-family: "Playfair Display", serif;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Brochure Section */
+.brochure-section {
+  background: linear-gradient(135deg, #d4af37, #f4e4bc);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.brochure-content h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.brochure-content p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: #333;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: #2c2c2c;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partnership-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .partnership-text {
+    padding: 0;
+  }
+
+  .stats-overlay {
+    position: static;
+    margin-top: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 200px;
+  }
+}

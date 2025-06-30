@@ -1,0 +1,130 @@
+/* Services Detailed */
+.services-detailed {
+  padding: 4rem 0;
+}
+
+.service-section {
+  margin-bottom: 6rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.service-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.service-header p {
+  font-size: 1.2rem;
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.service-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.service-content-grid.reverse {
+  direction: rtl;
+}
+
+.service-content-grid.reverse > * {
+  direction: ltr;
+}
+
+.service-text {
+  padding: 1rem;
+}
+
+.service-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 2rem;
+  color: #666;
+}
+
+.service-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+.service-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.service-images .service-img:first-child {
+  grid-column: 1 / -1;
+  height: 200px;
+}
+
+.service-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-content-grid.reverse {
+    direction: ltr;
+  }
+
+  .service-images {
+    grid-template-columns: 1fr;
+  }
+
+  .service-images .service-img:first-child {
+    grid-column: 1;
+  }
+
+  .service-section {
+    margin-bottom: 4rem;
+  }
+
+  .service-text {
+    padding: 0;
+  }
+}
